@@ -1,13 +1,234 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqxCGQMWakBKOkO-O33gQ49pyAw3bJ0hMG2w&usqp=CAU");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  height: 100%;
+}
+
+/* Layout */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  background-color: rgba(235, 235, 5, 0.808);
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8000;
+}
+/* Header */
+header a {
+  color: black;
+  background-color: rgba(235, 235, 5, 0.808);
+  padding: 1rem;
+}
+
+a.brand {
+  color: black;
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center {
+  justify-content: center;
+}
+
+
+/* Image */
+img {
+  border-radius: 0.5rem;
+}
+
+/* Card */
+.card {
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin: 0.8rem;
+} 
+
+.cart-card {
+  width: 350px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+/* Rating */
+.rating span {
+  color: #f0c040;
+  margin: 0.1rem;
+}
+
+button.primary {
+  padding: 5px;
+  border-radius: 3rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #4CAF50;
+  cursor: pointer;
+  width: 45%;
+}
+
+button.primary1 {
+  padding: 5px;
+  border-radius: 3rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #4CAF50;
+  cursor: pointer;
+  width: 70%;
+}
+
+button.primary3 {
+  padding: 5px;
+  border-radius: 3rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #4CAF50;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 135%;
+}
+
+button.primary2 {
+  padding: 5px;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: red;
+  cursor: pointer;
+}
+.alert {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+
+.alert-info {
+  color: #2020a0;
+  background-color: #e0e0ff;
+}
+
+.alert-danger {
+  color: #a02020;
+  background-color: #ffe0e0;
+}
+
+.alert-success {
+  color: #20a020;
+  background-color: #eeffe0;
+}
+
+.badge {
+  background-color: #f02121;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+}
+
+.label {
+  padding: 5px;
+  font-size: 0.9rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+}
+
+.input {
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 0.9rem;
+  padding: 7px 0;
+  background: transparent;
+  width: 135%;
+}
+
+.extend {
+  width: 250px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  right: 0;
+  min-width: 12rem;
+  padding:  1rem;
+  z-index: 1;
+  background-color: rgba(235, 235, 5, 0.808);
+  margin: 0;
+  margin-top: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.steps-bar > div {
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+}
+
+.steps-bar > div.active {
+  border-top-color:  #4CAF50;
+  color: #4CAF50;
+  font-weight: bold;
 }

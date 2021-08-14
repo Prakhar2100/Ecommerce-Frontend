@@ -1,0 +1,7 @@
+export const ITEMS_REQUEST = 'ITEMS_REQUEST';
+export const ITEMS_SUCCESS = 'ITEMS_SUCCESS';
+export const ITEMS_FAILURE = 'ITEMS_FAILURE';
+
+export const ITEM_REQUEST = 'ITEM_REQUEST';
+export const ITEM_SUCCESS = 'ITEM_SUCCESS';
+export const ITEM_FAILURE = 'ITEM_FAILURE';
