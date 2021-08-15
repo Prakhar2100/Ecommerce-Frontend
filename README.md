@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+<h1 align = 'center'>
+    Ecommerce
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<div align = 'center'>
+              
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com) 
 
-In the project directory, you can run:
+</div>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Description
+An ecommerce store built with MERN stack, and utilizes third party api's like Paypal Developer Api's for payment gateway. User can register or signin anytime and select the items to be added in the cart, Proceed to payment, fill the shipping details , select a payment method, and finally place the order , PayPal Button will appear and you can click on it to proceed to payment gateway and make a payment successfully
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Link to Ecommerce-Backend: https://github.com/Prakhar2100/Ecommerce-Backend
 
-### `yarn test`
+## Features
+1) Full featured shopping cart
+2) Product reviews and Ratings
+3) Login & Register with JWT Authentication
+4) Add to Cart & Remove from Cart
+5) User & Product Models in MonogoDB
+6) Checkout Facility to enter Shipping Details
+7) Place Order
+8) Steps Bar Implemented to track shopping progress
+9) Payment Gateway with Paypal Api's (env set to sandbox)
+10) Payment Gateway with Paypal Api's (To be added)
+11) Heroku Deployment (issues to be fixed)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used (MERN STACK)
+1. MongoDB
+2. Express.js
+3. React.js
+4. Node.js
 
-### `yarn build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Login Screen
+![1](https://user-images.githubusercontent.com/62941019/129469130-41ebf836-cf05-46e4-b262-940b055f419f.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Register Screen
+![2](https://user-images.githubusercontent.com/62941019/129469146-08dde664-e557-42b5-a0c4-dcda87a45860.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Items Screen
+![3](https://user-images.githubusercontent.com/62941019/129469183-365204cd-de8b-478d-85ce-93761158850c.png)
 
-### `yarn eject`
+4. Item Detail Screen
+![4](https://user-images.githubusercontent.com/62941019/129469188-2e3e5928-8a17-4e9d-8713-a1c403d5c787.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5. Cart Screen
+![5](https://user-images.githubusercontent.com/62941019/129469191-cea97228-5868-4f5a-87cb-8706f0a593fd.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. Shipping Screen
+![6](https://user-images.githubusercontent.com/62941019/129469196-5585d2c6-8b1a-4ce6-bd2c-3953deab3ef2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+7. Payment Method Screen
+![7](https://user-images.githubusercontent.com/62941019/129469205-bf11e244-5db5-4ef2-a3ae-1c3c18ec563b.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+8. Order Summary Screen
+![8](https://user-images.githubusercontent.com/62941019/129469219-aaccda60-2a4e-406d-a1d7-7fcf12dee841.png)
 
-## Learn More
+9. Make a Payment 
+![9](https://user-images.githubusercontent.com/62941019/129469226-da27fa95-c246-4c39-bfcd-aa04c61d94e0.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center"> Made with ❤ by <a href="https://github.com/Prakhar2100">Prakhar Kochar</a></p>
